@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Sono', sans-serif;    
+}
+
+
+/* ----NAV BAR CSS CODE ----*/
+nav {
+    padding-top: .25em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    top: 0px;
+    position: sticky;
+
+    display: flex;
+    justify-content:space-between  ;
+    align-items: center;
+    background-color: #CBE4DE;
+    border-bottom-style: solid;
+    background:linear-gradient(#CBE4DE, #cbe4de9f);
+
+    z-index: 9999; /* set a higher z-index */
+}
+
+.nav-links{
+  color: #2C3333;
+  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Sono', sans-serif;
+  font-size: 24px;
+
+  padding-right:25px;
+  padding-left: 0;
+  border-right-width:3px ;
+  border-right-style: solid;
+  border-right-color: #2C3333;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px;
+    
+  }
+li > a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+li > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+    margin-top:5px;
+  }
+li > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    background: black;
+    margin-top:5px;
+  }
