@@ -1,0 +1,46 @@
+* {
+    border-width: 1px;
+    border-style: solid;
+}
+
+#mainSection {
+    margin: 50px 100px 25px 100px;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    background-color: rgba(112, 112, 112, 0.329);
+}
+
+.progressStyles {
+    font-size: 34px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mathsProgress {
+    background: rgb(133, 134, 133);
+}
+.codeProgress {
+    background: rgb(133, 134, 133);
+}
+
+.progressBars {
+    margin-bottom: 10px;
+}
+
+.progressButtons {
+    padding: 10px 20px; /* Adjust the padding values as needed */
+    background-color: #28a745; /* Change the background color to green */
+    color: #fff; /* Change the text color to your preferred color */
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+    border: none; /* Remove the border */
+    box-shadow: none; /* Remove the shadow */
+  }
+
+  /* CSS styles for button hover effect */
+  .progressButtons:hover {
+    background-color: #9effa5; /* Change to a lighter green color when hovered */
+}
