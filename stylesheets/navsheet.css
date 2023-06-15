@@ -7,6 +7,12 @@
 
 /* ----NAV BAR CSS CODE ----*/
 
+
+#bannerNav{
+  font-size: 200px;
+  text-align: center;
+}
+
   #bannerNav, #bannerNav > a {
     background-color: #242424;
     color: aliceblue;
@@ -17,7 +23,7 @@
   nav {
     position: sticky;
     top: 0;
-    padding: 0 6em;    /* padding from right of margin to show icon for profile, added to left to even out */
+    padding: 0 6em 0 2em;    /* padding from right of margin to show icon for profile, added to left to even out */
     display: flex;
     justify-content: space-between;
     align-items: center;
