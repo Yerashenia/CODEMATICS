@@ -56,15 +56,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    padding: 0 10em 0 8em;
+    padding: 2em 10em 2em 8em;
 
 
     background-color: rgba(112, 112, 112, 0.329);
 }
 
 #topicSelection, #challengeSection {
-    background-color: rgba(0, 0, 255, 0.158);
     padding: 35px;
+    border: solid;
 }
 
 #topicSelection h3, #challengeSection h3 {
@@ -82,6 +82,7 @@ th {
 
 th, td {
     padding: 5px 50px 5px 50px;
+    font-size: 20px;
 }
 
 
