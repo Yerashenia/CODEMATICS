@@ -17,31 +17,31 @@
 
 .progressStyles {
     font-size: 64px;
-    padding: 25px;
+    padding: 20px;
     border-radius: 10px;
     border-style: solid;
+    width: 750px;
 
 }
 
-.codeProgress {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.progressBars {
-    margin-bottom: 10px;
-}
-
+.progress-bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+.progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: #4CAF50;
+  }
+  
 .progressButtons {
-    padding: 10px 20px; 
+    padding: 5px 20px; 
 
     color: #000000; 
     transition: background-color 0.3s ease; 
     box-shadow: none;
     border: 2px solid #000000;
-
-
 
     font-size: 32px;
     font-weight: 700;
@@ -82,9 +82,11 @@ th {
 
 th, td {
     padding: 5px 50px 5px 50px;
-    font-size: 20px;
+    font-size: 24px;
 }
-
+.solution {
+    text-align: center;
+}
 
 
 #externalContent > h2 {
@@ -120,3 +122,4 @@ th, td {
     border-radius: 20px;
     border-color: #2C3333;
 }
+

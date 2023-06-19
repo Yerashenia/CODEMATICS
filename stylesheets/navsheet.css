@@ -55,7 +55,6 @@
   .navList {
     list-style-type: none;
     display: inline-block;
-    margin: 15px;
   }
   
   .navList > a {
