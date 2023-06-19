@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Prompt', sans-serif;
+    /* background-color: #28282b; */
 }
 
 
@@ -14,7 +15,7 @@
 }
 
   #bannerNav, #bannerNav > a {
-    background-color: #242424;
+    
     color: aliceblue;
     font-family: 'Prompt', sans-serif;
     text-decoration: none;
@@ -27,8 +28,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #242424;
-    border-bottom-style: solid;
+    /* background: linear-gradient(to bottom, #242424,#00000013); */
+    background-color: #000000;
     z-index: 9999;
   }
   
@@ -40,11 +41,13 @@
     color: aliceblue;
     font-family: 'Prompt', sans-serif;
     font-size: 24px;
+    background-color: #000000;
   }
   
   .nav-links {
     padding-right: 1.5em;
     border-right: 3px solid aliceblue;
+    background-color: #000000;
   }
   
   .logo {
@@ -55,6 +58,8 @@
   .navList {
     list-style-type: none;
     display: inline-block;
+    margin: 15px;
+    background-color: #000000;
   }
   
   .navList > a {
@@ -62,6 +67,7 @@
     text-decoration: none;
     display: inline-block;
     position: relative;
+    background-color: #000000;
   }
   
   .navList > a::after {
@@ -74,6 +80,8 @@
     background: transparent;
     transition: all 0.3s;
     margin-top: 5px;
+    /* background: linear-gradient(to bottom, #242424,#00000013); */
+    background-color: #000000;
   }
   
   .navList > a:hover::after,
@@ -81,4 +89,5 @@
     width: 100%;
     background: aliceblue;
     margin-top: 5px;
+    
   }
