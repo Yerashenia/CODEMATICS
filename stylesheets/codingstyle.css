@@ -43,7 +43,7 @@ body {
 }
 
 #right-section {
-    background-color: #444;
+    background-color: #242424;
 }
 
 #user-code {
@@ -57,16 +57,16 @@ body {
 }
 
 #run-code {
-    background-color: #ddd;
-    border: none;
+    background-color: #242424;
+    border: 3px solid aliceblue;
     padding: 1em;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 1em;
 }
 
 #run-code:hover {
-    background-color: #ccc;
+    background-color: rgba(85, 85, 85, 0.644);
 }
 
 #code-output {
