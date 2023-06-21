@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/navsheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/codingstyle.css">
+   <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
+    <title>CODEMATICS</title>
+
+
+</head>
+<body>
+    <div id="navContainer">
+        <h1 id="bannerNav"><a href="">CODEMATICS</a></h1>
+        <nav>
+            <ul>
+                <li class="navList"><a class="nav-links" href="">placeholder</a></li>
+                <li class="navList"><a class="nav-links" href="">Maths</a></li>
+                <li class="navList"><a class="nav-links" href="/codingquestion.html">Programming</a></li>
+                <li class="navList"><a class="nav-links" href="">Daily Challenges</a></li>
+                <li class="navList"><a class="nav-links" href="">placeholder</a></li>
+                <li class="navList"><a class="nav-links" href="">placeholder</a></li>
+            </ul>
+            <div class="rightNav">
+                <a  class="nav-links"href="#backtotop">profile</a>
+            </div>
+        </nav>
+    </div>
+
+    <div id="container">
+        <div id="left-section">
+            <h1 id="question-title">Question Title</h1>
+            <p id="question-description">This is a description of the question. It includes all the information needed to answer the question.</p>
+            <div id="info-box">
+                <h3>Information:</h3>
+                <pre id="info-content">This is some important information related to the question</pre>
+            </div>
+            <div id="example-section">
+                <h3>Example:</h3>
+                <pre id="example-code">def example_code():
+        print("This is example code")</pre>
+            </div>
+        </div>
+        <div id="right-section">
+            <textarea id="user-code">def user_code():
+        # Write your code here
+        pass</textarea>
+            <button id="run-code">Run Code</button>
+            <div id="code-output">
+                <h3>Output:</h3>
+                <pre id="output-area">Output will be displayed here</pre>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/codingscript.js"></script>
+</body>
