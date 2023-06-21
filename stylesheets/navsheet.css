@@ -36,3 +36,6 @@ li{
 li:hover {
   background-color: #f1f1f13d;
 }
+a:link, a:visited{
+  text-decoration: none;
+}
