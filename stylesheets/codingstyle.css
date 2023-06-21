@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     color: white;
@@ -6,18 +14,28 @@ body {
     padding: 0;
     height: 100vh;
     display: flex;
+
+    background-color: #242424;
+
 }
 
 #container {
     display: flex;
     height: 100%;
     width: 100%;
+    margin-top: 25px;
 }
 
 #left-section, #right-section {
     width: 50%;
     padding: 2em;
     box-sizing: border-box;
+}
+
+#info-box {
+    border: 1px solid white;
+    padding: 1em;
+    margin-top: 2em;
 }
 
 #left-section {
@@ -77,6 +95,39 @@ body {
 #container {
     display: flex;
     width: 100%;
-    height: calc(100vh - 60px);  /* assuming your nav bar has height of 60px */
+    height: 75vh;  /* assuming your nav bar has height of 60px */
+    /* Other styles... */
+}
+
+
+#right-section {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;  /* assuming your nav bar has height of 60px */
+    padding: 0;
+}
+
+#user-code {
+    height: 50%;
+}
+
+#code-output {
+    height: 30%;
+    overflow: auto;
+    resize: both;
+    min-height: 30%;
+
+}
+
+#example-section {
+    border: 1px solid white;
+    padding: 1em;
+    margin-top: 2em;
+    /* Other styles... */
+}
+
+#run-code {
+    margin-top: 15px;
+    margin-bottom: 25px;
     /* Other styles... */
 }
