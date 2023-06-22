@@ -1,0 +1,57 @@
+#resourcesDescription {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 60px;
+}
+
+#resourcesDescription > p {
+    font-size: 30px;
+}
+
+#resoucresTitle {
+    padding-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+
+#titleDescription{
+    margin: 0px 400px;
+    font-size: 44px;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#externalContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.imageDivs{
+   padding-top: 40px;
+}
+
+.imageDivs > h3 {
+    font-size: 42px;
+    padding-bottom: 1em;
+} 
+
+.contentLinks img{
+    background-color: rgba(255, 255, 255, 0.781);
+    height: 375px;
+    width: 400px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: #2C3333;
+}
