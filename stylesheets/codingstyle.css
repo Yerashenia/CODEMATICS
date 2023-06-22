@@ -38,14 +38,6 @@ body {
     margin-top: 2em;
 }
 
-#left-section {
-    background-color: #333;
-}
-
-#right-section {
-    background-color: #242424;
-}
-
 #user-code {
     width: 100%;
     height: 300px;
@@ -87,19 +79,6 @@ body {
     /* Other styles... */
 }
 
-#navContainer {
-    /* Styles for your nav bar... */
-    width: 100%;
-}
-
-#container {
-    display: flex;
-    width: 100%;
-    height: 75vh;  /* assuming your nav bar has height of 60px */
-    /* Other styles... */
-}
-
-
 #right-section {
     display: flex;
     flex-direction: column;
@@ -112,7 +91,7 @@ body {
 }
 
 #code-output {
-    height: 30%;
+    height: 35%;
     overflow: auto;
     resize: both;
     min-height: 30%;
@@ -130,4 +109,9 @@ body {
     margin-top: 15px;
     margin-bottom: 25px;
     /* Other styles... */
+}
+
+#matrixImage {
+    height: 100%;
+    width: 100%;
 }
