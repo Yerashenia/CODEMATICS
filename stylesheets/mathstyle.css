@@ -1,0 +1,38 @@
+.accordianPanel {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.topicAccordian {
+    border: 3px solid aliceblue;
+    background-color: #242424;
+    font-size: 45px;
+    width: 100%;
+    text-align: left;
+    transition: 0.5s;
+    padding: 10px;
+}
+.active, .topicAccordian:hover {
+    background-color: rgba(112, 112, 112, 0.329);
+}
+
+.questionPanel {
+    padding: 0px 10px;
+    font-size: 30px;
+    display: none;
+}
+
+.topicAccordian:after {
+    content: "\22C1";
+    margin-right: 15px;
+    color:aliceblue;
+    float: right;
+}
+.active:after {
+    content: "\22C0";
+    margin-right: 15px;
+}
