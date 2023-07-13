@@ -30,12 +30,22 @@
         <div id="left-section">
             <h2 id="question-title">Task: Transpose a matrix using Java</h2>
             <p id="question-description">
-                Arrays in java can be used to represent matrices. Given the following 2D array as input into your program, 
-                produce the 2D array that is labelled output using your program by swapping the rows with the columns using Java.
+                A vector is a quantity that is determined by its magnitude and direction. A scalar is a quantity that is determined by its magnitude.
+                <br><br> 
+                Consider two points, p = (px, py) and q = (qx, qy). We consider the inversion or point reflection, r = (rx, ry), of point p across point q to be a 180° rotation of point p around q.
+                <br>
+                Given n sets of points p and q, find r for each pair of points and print two space-separated integers denoting the respective values of rx and ry on a new line.
+                <br>
+                Calculate the point reflection (r) of point p across point q, where the two points are given by the user. The user should also be able to set the number of pair of points (n).
+                <br><br> 
+                Input:
+                <br><br>2		    (n)
+                <br>0 0 1 1 	(px1, py1, qx1, qy1)
+                <br>1 1 2 2 	(px2, py2, qx2, qy2)
                 <br><br>
-                Input: [[1 , 2, 3], [5, 6, 7], [9, 10, 11], [13, 14, 15]] 
-                <br><br>
-                Output: [[1, 5, 9, 13], [2, 6, 10, 14], [3, 7, 11, 15 ]]
+                Output: 
+                <br><br>2 2		(rx1, ry1)
+                <br>3 3		(rx2, ry2)
                
             </p>
             <div id="info-box">
@@ -59,44 +69,15 @@
             <div id="info-box">
                 <h3>Pseudocode:</h3>
                 <div id="pseudo-content">
-                    <table>
-                        <tr>
-                            <td>Step 1:</td>
-                            <td>Set 2DArray1 which holds the matrix to transpose</td>
-                        </tr>
-                        <tr>
-                            <td>Step 2:</td>
-                            <td>INIT 2DArray2 which will hold the transposed Matrix</td>
-                        </tr>
-                        <tr>
-                            <td>Step 3:</td>
-                            <td>Create a method which takes in a 2D array as a parameter and returns a 2DArray.</td>
-                        </tr>
-                        <tr>
-                            <td>Step 4:</td>
-                            <td>INIT a local 2DArray3 inside the function with dimentions:</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>2DArray3[2DArray1[0].length][2DArray1.length] which will store the transposed matrix</td>
-                        </tr>
-                        <tr>
-                            <td>Step 5:</td>
-                            <td>For i=0 to i < 2DArray1.length, i++</td>
-                        </tr>
-                        <tr>
-                            <td>Step 6:</td>
-                            <td>For j=0 to j < 2DArray1[0].length, j++</td>
-                        </tr>
-                        <tr>
-                            <td>Step 7:</td>
-                            <td>2DArray3[ j ][ i ] = 2DArray1[ i ][ j ]</td>
-                        </tr>
-                        <tr>
-                            <td>Step 8: </td>
-                            <td>Pass out: 2DArray3</td>
-                        </tr>
-                    </table>
+                    <p>Step 1: Set 2DArray1 which holds the matrix to transpose</p>
+                    <p>Step 2: INIT 2DArray2 which will hold the transposed Matrix</p>
+                    <p>Step 3: Create a method which takes in a 2D array as a parameter and returns a 2DArray.</p>
+                    <p>Step 4: INIT a local 2DArray3 inside the function with dimentions:</p>
+                    <p>2DArray3[2DArray1[0].length][2DArray1.length] which will store the transposed matrix</p>
+                    <p>Step 5: For i=0 to i < 2DArray1.length, i++</p>
+                    <p>Step 6: For j=0 to j < 2DArray1[0].length, j++</p>
+                    <p>Step 7: 2DArray3[ j ][ i ] = 2DArray1[ i ][ j ]</p>
+                    <p>Step 8: Pass out: 2DArray3</p>
                 </div>
             </div>
         </div>

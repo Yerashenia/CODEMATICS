@@ -24,7 +24,7 @@
 
 .progress-bar-container {
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #242424;
   }
   
 .progress-bar {
@@ -35,7 +35,7 @@
   
 .progressButtons {
     padding: 5px 20px; 
-
+    background-color: whitesmoke;
     color: #000000; 
     transition: background-color 0.3s ease; 
     box-shadow: none;
@@ -47,14 +47,13 @@
 
   /* CSS styles for button hover effect */
   .progressButtons:hover {
-    background-color: #6e6e6e;
+    background-color: rgb(177, 177, 177);
 }
 
 #middleSection {
-    padding: 4em 25em 4em 25em;
-    border-top: 15px solid aliceblue;
-    border-bottom: 15px solid aliceblue;
-    background-color: rgba(112, 112, 112, 0.329);
+    border-top: 15px solid whitesmoke;
+    border-bottom: 15px solid whitesmoke;
+    background-color: #242424;
 }
 
 #topicSelection {
