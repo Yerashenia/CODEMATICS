@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/navsheet.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/codingstyle.css">
+   <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
+    <title>Programming Questions</title>
+
+
+</head>
+<body>
+    <div>
+        <nav> 
+            <h1><a href="/index.html">CODEMATICS</a></h1>
+            <p>Bridging the gap between Mathematics and Programming</p>
+            <ul>
+                <li><a href="mathquestions.html">Maths</a></li>
+                <li><a href="codingquestions.html">Programming</a></li>
+                <li><a href="/resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="container">
+        <div id="left-section">
+            <h2 id="question-title">Task: Construct a program in Java that calculated the probability of 
+                                            getting at least 2 tails when a coin is tossed 4 times.</h2>
+            <p id="question-description">
+               
+            </p>
+            <div id="info-box">
+                <h3>Information:</h3>
+                <p id="info-content">
+                    The probability of an event A occurring is written as P(A). P(A) = number of times the event A can occur / total number of possible outcomes. 
+                    The overall probability of event A occurring and then also event B occurring is P(A) * P(B).
+                    <br><br>
+                    Imagine a coin is tossed three times, how would we find the probability of getting at least 2 tails. 
+                    To solve this problem in maths we need to find the sample space S, and in order to do this we are going to create a tree diagram.
+                    <br><br>
+                    Therefore S = (HHH, HHT, HTH, HTT, THH, THT ,TTH, TTT)
+                    <br><br>
+                    We can see from S that there are 4 possible outcomes where we would get at least 2 tails. However, 
+                    if we wanted to find of getting at least 2 tails when a coin is tossed 4 times, the process becomes very tedious.
+
+
+
+                </p>
+            </div>
+            <div id="example-section">
+                <h3>Visual Example:</h3>
+                <img id="matrixImage"src="/images/probability-example.png">
+            </div>
+            <div id="info-box">
+                <h3>Pseudocode:</h3>
+                <div id="pseudo-content">
+                    <table>
+                        <tr>
+                            <td>Step 1:</td>
+                            <td>Set numberOfTailsCoin1 to store the number of tails after the first coin toss (can be 0 or 1).</td>
+                        </tr>
+                        <tr>
+                            <td>Step 2:</td>
+                            <td>Set numberOfTailsCoin2 to store the number of tails after the second coin toss (can be 0 or 1).</td>
+                        </tr>
+                        <tr>
+                            <td>Step 3:</td>
+                            <td>Set numberOfTailsCoin3 to store the number of tails after the third coin toss (can be 0 or 1).</td>
+                        </tr>
+                        <tr>
+                            <td>Step 4:</td>
+                            <td>Set numberOfTailsCoin4 to store the number of tails after the fourth coin toss (can be 0 or 1).</td>
+                        </tr>
+                        <tr>
+                            <td>Step 5:</td>
+                            <td>Set numberOfPossibilitiesOfGettingTwoTails = 0</td>
+                        </tr>
+                        <tr>
+                            <td>Step 6:</td>
+                            <td>Set totalNumberOfPossibleOutcomes = 2*2*2*2</td>
+                        </tr>
+                        <tr>
+                            <td>Step 7:</td>
+                            <td>For i = 0 to i < 2, i++
+                                Set numberOfTailsCoin1 = 0
+                                IF i == 1 THEN 
+                                numberOfTailsCoin1 = 1</td>
+                        </tr>
+                        <tr>
+                            <td>Step 8:</td>
+                            <td> For j = 0 to j < 2, j++
+                                numberOfTailsCoin2 = 0
+                                IF j == 1 THEN
+                                numberOfTailsCoin2 – 1</td>
+                        </tr>
+                        <tr>
+                            <td>Step 9: </td>
+                            <td>For k = 0 to k < 2, k++
+                                numberOfTailsCoin3 = 0
+                                IF k == 1 THEN
+                                numberOFTailsCoin3 = 1</td>
+                        </tr>
+                        <tr>
+                            <td>Step 10: </td>
+                            <td>For l = 0 to l < 2, l++
+                                numberOfTailsCoin4 = 0
+                                IF l == 1 THEN</td>
+                        </tr>
+                        <tr>
+                            <td>Step 10.1: </td>
+                            <td>numberOfTailsCoin4 = 1</td>
+                        </tr>
+                        <tr>
+                            <td>Step 10.2: </td>
+                            <td>IF numberOfTailsCoin1 + numberOfTailsCoin2 + numberOfTailsCoin3  + numberOfTailsCoin4</td>
+                        </tr>
+                        <tr>
+                            <td>Step 10.3</td>
+                            <td>>= 2 THEN numberOfPossibilitiesOfGettingTwoTails++</td>
+                        </tr>
+                        <tr>
+                            <td>Step 11</td>
+                            <td>Print numberOfPossibilitiesOfGettingTwoTails</td>
+                        </tr>
+                        <tr>
+                            <td>Step 12</td>
+                            <td>Calculate probability of getting at least two tails</td>
+                        </tr>
+                        <tr>
+                            <td>Step 13</td>
+                            <td>Print probability of getting at least two tails</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="right-section">
+            <textarea id="user-code">def user_code():
+        # Write your code here
+        pass</textarea>
+            <button id="run-code">Run Code</button>
+            <div id="code-output">
+                <h3>Output:</h3>
+                <pre id="output-area">Output will be displayed here</pre>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/codingscript.js"></script>
+</body>
