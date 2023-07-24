@@ -106,7 +106,7 @@ th, td {
     padding-bottom: 1em;
 } 
 
-.contentLinks img{
+.contentLinks img {
     background-color: rgba(255, 255, 255, 0.781);
     height: 375px;
     width: 400px;
@@ -116,4 +116,32 @@ th, td {
     border-radius: 20px;
     border-color: #2C3333;
 }
+
+#middleSection {
+    border-top: 15px solid whitesmoke;
+    border-bottom: 15px solid whitesmoke;
+    background-color: #242424;
+    text-align: center; /* Center the table */
+    color: white; /* Set text color to white */
+    padding: 50px 20px; /* Increase the top and bottom padding to create more margin */
+}
+
+/* Additional CSS for the table */
+#middleSection table {
+    width: 80%; /* Reduce the width of the table */
+    margin: 0 auto; /* Center the table horizontally */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+#middleSection th, #middleSection td {
+    padding: 8px; /* Adjust cell padding */
+    border: 1px solid white; /* Add border to cells */
+    text-align: center; /* Center the text inside cells */
+}
+
+#middleSection th a, #middleSection td a {
+    color: white; /* Set text color to white for links inside the th and td tags */
+    text-decoration: none; /* Remove text decoration for links in the table */
+}
+
 
