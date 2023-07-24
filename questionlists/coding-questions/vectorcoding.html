@@ -29,7 +29,7 @@
     </div>
     <div id="container">
         <div id="left-section">
-            <h2 id="question-title">Task: Solve the Vector Position</h2>
+            <h2 id="question-title">Task: Calculate a coordinates point of reflection</h2>
             <p id="question-description">
                 A vector is a quantity that is determined by its magnitude and direction. A scalar is a quantity that is determined by its magnitude.
                 <br><br> 
@@ -49,36 +49,63 @@
                 <br>3 3		(rx2, ry2)
                
             </p>
-            <div id="info-box">
-                <h3>Information:</h3>
-                <p id="info-content">
-                    A matrix is a rectangular array of numbers organised into rows and columns. 
-                    Matrices provide a method of organising, storing and working with mathematical information. 
-                    They are often used in areas such as computer graphics. A matrix order is identified by the number of 
-                    rows and columns it has, in that order. A 2 by 2 (2 x 2) matrix, has two rows and two columns. The transpose
-                    of the matrix with dimensions R x C is a matrix C x R for Which result matrix B[c][r] = A[r][c].
-                    <br><br>
-                    If we transpose a matrix  it becomes the matrix. The rows of the original matrix become columns
-                    of the transposed matrix or we can say that the elements of the matrix have been flipped over its main diagonal:
-                    The main diagonal is the line going from the top left element to the bottom right element of the square matrix.
-                </p>
-            </div>
             <div id="example-section">
                 <h3>Visual Example:</h3>
                 <img id="matrixImage"src="/images/matrix-example.png">
             </div>
             <div id="info-box">
+                <h3>Information:</h3>
+                <p id="info-content">
+                    One way to find the point reflection (r) is by using the midpoint formula. This formula adds the first coordinate + second coordinate and divides the outcome by 2. In our case this means we could use p(0, 0) and r (which we don’t know), to get q(1, 1). 
+                    <br><br>
+                    This would mean to get the middle point we need to calculate the x coordinate: (px + rx) / 2 = qx and the y coordinate: (py + ry) / 2 = qy.
+                </p>
+            </div>
+            <div id="info-box">
                 <h3>Pseudocode:</h3>
                 <div id="pseudo-content">
-                    <p>Step 1: Set 2DArray1 which holds the matrix to transpose</p>
-                    <p>Step 2: INIT 2DArray2 which will hold the transposed Matrix</p>
-                    <p>Step 3: Create a method which takes in a 2D array as a parameter and returns a 2DArray.</p>
-                    <p>Step 4: INIT a local 2DArray3 inside the function with dimentions:</p>
-                    <p>2DArray3[2DArray1[0].length][2DArray1.length] which will store the transposed matrix</p>
-                    <p>Step 5: For i=0 to i < 2DArray1.length, i++</p>
-                    <p>Step 6: For j=0 to j < 2DArray1[0].length, j++</p>
-                    <p>Step 7: 2DArray3[ j ][ i ] = 2DArray1[ i ][ j ]</p>
-                    <p>Step 8: Pass out: 2DArray3</p>
+                    <table>
+                        <tr>
+                            <td>Step 1:</td>
+                            <td>Creating lists for coordinates</td>
+                        </tr>
+                        <tr>
+                            <td>Step 2:</td>
+                            <td>Get coordinate pair number (n)</td>
+                        </tr>
+                        <tr>
+                            <td>Step 3:</td>
+                            <td>For loop i != n</td>
+                        </tr>
+                        <tr>
+                            <td>Step 3.a:</td>
+                            <td>Asks user for first point p(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Step 3.b:</td>
+                            <td>Asks user for first point p(y)</td>
+                        </tr>
+                        <tr>
+                            <td>Step 3.c:</td>
+                            <td>Asks user for first point q(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Step 3.d:</td>
+                            <td>Asks user for first point q(y)</td>
+                        </tr>
+                        <tr>
+                            <td>Step 7:</td>
+                            <td>Calculates point reflection r</td>
+                        </tr>
+                        <tr>
+                            <td>Step 8: </td>
+                            <td>Displays point reflection r</td>
+                        </tr>
+                        <tr>
+                            <td>Step 9:</td>
+                            <td>i = i + 1</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>

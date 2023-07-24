@@ -32,9 +32,14 @@ body {
     box-sizing: border-box;
 }
 
-#question-title, #question-description{
+#question-description{
     border: 1px solid #242424;
+    background-color: whitesmoke;
+    padding: 1em;
+}
+#question-title{
     text-align: center;
+    border: 1px solid #242424;
     background-color: whitesmoke;
 }
 
