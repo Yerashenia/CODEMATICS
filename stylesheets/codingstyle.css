@@ -8,14 +8,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: white;
+    color: #242424;
     font-size: 18px;
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
 
-    background-color: #242424;
+    background-color: white;
 
 }
 
@@ -32,18 +32,26 @@ body {
     box-sizing: border-box;
 }
 
+#question-description{
+    border: 1px solid #242424;
+    background-color: whitesmoke;
+    padding: 1em;
+}
+#question-title{
+    text-align: center;
+    border: 1px solid #242424;
+    background-color: whitesmoke;
+}
+
+#question-description {
+    margin-top: 25px;
+}
+
 #info-box {
-    border: 1px solid white;
+    border: 1px solid #242424;
+    background-color: whitesmoke;
     padding: 1em;
     margin-top: 2em;
-}
-
-#left-section {
-    background-color: #333;
-}
-
-#right-section {
-    background-color: #444;
 }
 
 #user-code {
@@ -51,26 +59,28 @@ body {
     height: 300px;
     font-size: 16px;
     padding: 1em;
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
     margin-bottom: 1em;
 }
 
 #run-code {
-    background-color: #ddd;
-    border: none;
+    color: white;
+    background-color: #242424;
+    border: 3px solid #555;
     padding: 1em;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 1em;
 }
 
 #run-code:hover {
-    background-color: #ccc;
+    background-color: rgba(85, 85, 85, 0.644);
 }
 
 #code-output {
-    background-color: #555;
+    color:white;
+    background-color: #848484;
     padding: 1em;
     min-height: 100px;
     font-size: 16px;
@@ -87,19 +97,6 @@ body {
     /* Other styles... */
 }
 
-#navContainer {
-    /* Styles for your nav bar... */
-    width: 100%;
-}
-
-#container {
-    display: flex;
-    width: 100%;
-    height: 75vh;  /* assuming your nav bar has height of 60px */
-    /* Other styles... */
-}
-
-
 #right-section {
     display: flex;
     flex-direction: column;
@@ -112,7 +109,7 @@ body {
 }
 
 #code-output {
-    height: 30%;
+    height: 35%;
     overflow: auto;
     resize: both;
     min-height: 30%;
@@ -120,7 +117,8 @@ body {
 }
 
 #example-section {
-    border: 1px solid white;
+    border: 1px solid #242424;
+    background-color: whitesmoke;
     padding: 1em;
     margin-top: 2em;
     /* Other styles... */
@@ -130,4 +128,16 @@ body {
     margin-top: 15px;
     margin-bottom: 25px;
     /* Other styles... */
+}
+
+#matrixImage {
+    height: 100%;
+    width: 100%;
+}
+
+/* #pseudo-content td:nth-child(2n) {
+    text-indent: 1em;
+} */
+#pseudo-content td:nth-child(2n){
+text-indent: 2em;
 }

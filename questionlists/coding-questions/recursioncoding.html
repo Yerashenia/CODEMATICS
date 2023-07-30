@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/navsheet.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/codingstyle.css">
+   <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
+    <title>Recursion Coding</title>
+
+
+</head>
+<body>
+    <div>
+        <nav> 
+            <h1><a href="/index.html">CODEMATICS</a></h1>
+            <p>Bridging the gap between Mathematics and Programming</p>
+            <ul>
+                <li><a href="mathquestions.html">Maths</a></li>
+                <li><a href="codingquestions.html">Programming</a></li>
+                <li><a href="/resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="container">
+        <div id="left-section">
+            <h2 id="question-title">Task: Recursion</h2>
+            <p id="question-description">
+               
+            </p>
+            <div id="info-box">
+                <h3>Information:</h3>
+                <p id="info-content">
+                    Recursion occurs when the definition of a concept or process depends on a simpler version of itself. 
+                    The most common application of recursion is in mathematics and computer science, where a function being
+                    defined is applied within its own definition.
+                    <br><br>
+                    In programming recursion could occur when a method/function calls itself.
+
+                    
+                    
+                </p>
+            </div>
+            <div id="example-section">
+                <h3>Visual Example:</h3>
+                <p>Example: add all the numbers up to 10.
+                <br><br>
+                    sum(10) = 10 + sum(9)<br>
+                    10 + all of the numbers up to 9<br>
+                    10 + (9 + sum (8))<br>
+                    sum(9) = 9 + sum(8)<br>
+                    9 + all of the numbers up to 8<br>
+                    sum(8) = 8 + sum(7)<br>
+                    sum(7) = 7 + sum(6)<br>
+                    sum(6) = 6 + sum(5)<br>
+                    sum(5) = 5 + sum(4)<br>
+                    sum(4) = 4 + sum(3)<br>
+                    sum(3) = 3 + sum(2)<br>
+                    sum(2) = 2 + sum(1)<br>
+                    sum(1) = 1 + sum(0)<br>
+                    sum(0) = 0.<br>
+                    <br>
+                    The function will call itself repeatedly until it reaches 0. When it reaches 0 it will add the numbers together. Like so:
+                    <br>
+                    10 + (9 + (8 + (7 + (6 + (5 + (4 + (3 + (2 + (1 + (0)))))))))) = 55
+                </p>
+            </div>
+            <div id="info-box">
+                <h3>Pseudocode:</h3>
+                <div id="pseudo-content">
+                <img id="matrixImage"src="/images/recursion-pseudo.png">
+                </div>
+            </div>
+        </div>
+        <div id="right-section">
+            <textarea id="user-code">def user_code():
+        # Write your code here
+        pass</textarea>
+            <button id="run-code">Run Code</button>
+            <div id="code-output">
+                <h3>Output:</h3>
+                <pre id="output-area">Output will be displayed here</pre>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/codingscript.js"></script>
+</body>
